@@ -1,3 +1,13 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Default.aspx](./CS/Default.aspx) (VB: [Default.aspx](./VB/Default.aspx))
+* [Default.aspx.cs](./CS/Default.aspx.cs) (VB: [Default.aspx](./VB/Default.aspx))
+* [FolderBindingMode.aspx](./CS/FolderBindingMode.aspx) (VB: [FolderBindingMode.aspx.vb](./VB/FolderBindingMode.aspx.vb))
+* [FolderBindingMode.aspx.cs](./CS/FolderBindingMode.aspx.cs) (VB: [FolderBindingMode.aspx.vb](./VB/FolderBindingMode.aspx.vb))
+* [RegularBindingMode.aspx](./CS/RegularBindingMode.aspx) (VB: [RegularBindingMode.aspx.vb](./VB/RegularBindingMode.aspx.vb))
+* [RegularBindingMode.aspx.cs](./CS/RegularBindingMode.aspx.cs) (VB: [RegularBindingMode.aspx.vb](./VB/RegularBindingMode.aspx.vb))
+<!-- default file list end -->
 # ASPxImageGallery - How to add / remove images in different binding modes
 
 
