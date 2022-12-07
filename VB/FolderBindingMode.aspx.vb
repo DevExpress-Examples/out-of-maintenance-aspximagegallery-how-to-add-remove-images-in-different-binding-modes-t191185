@@ -1,8 +1,6 @@
 ﻿Imports System
 Imports System.IO
-Imports DevExpress.Web.ASPxEditors
-Imports DevExpress.Web.ASPxImageGallery
-Imports DevExpress.Web.ASPxUploadControl
+Imports DevExpress.Web
 
 Partial Public Class FolderBindingMode
     Inherits System.Web.UI.Page
@@ -17,7 +15,7 @@ Partial Public Class FolderBindingMode
         btnRemove.ClientSideEvents.Click = String.Format("function(s, e) {{ imageGallery.PerformCallback('REMOVE|{0}'); }}", container.ItemIndex)
     End Sub
 
-    Protected Sub ASPxImageGallery1_CustomCallback(ByVal sender As Object, ByVal e As DevExpress.Web.ASPxClasses.CallbackEventArgsBase)
+    Protected Sub ASPxImageGallery1_CustomCallback(ByVal sender As Object, ByVal e As DevExpress.Web.CallbackEventArgsBase)
         Dim parts() As String = e.Parameter.Split(New Char() { "|"c }, StringSplitOptions.RemoveEmptyEntries)
         Dim command As String = parts(0)
 

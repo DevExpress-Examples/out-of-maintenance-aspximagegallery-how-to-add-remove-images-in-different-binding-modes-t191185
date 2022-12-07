@@ -2,9 +2,7 @@ using System;
 using System.Data;
 using System.IO;
 using System.Web.UI;
-using DevExpress.Web.ASPxEditors;
-using DevExpress.Web.ASPxImageGallery;
-using DevExpress.Web.ASPxUploadControl;
+using DevExpress.Web;
 
 public partial class RegularBindingMode : System.Web.UI.Page {
     protected void Page_Load(object sender, EventArgs e) {
@@ -19,7 +17,7 @@ public partial class RegularBindingMode : System.Web.UI.Page {
         btnRemove.ClientSideEvents.Click = string.Format(@"function(s, e) {{ imageGallery.PerformCallback('REMOVE|{0}'); }}", container.Item.Name);
     }
 
-    protected void ASPxImageGallery1_CustomCallback(object sender, DevExpress.Web.ASPxClasses.CallbackEventArgsBase e) {
+    protected void ASPxImageGallery1_CustomCallback(object sender, DevExpress.Web.CallbackEventArgsBase e) {
         string[] parts = e.Parameter.Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
         string command = parts[0];
 
